@@ -1,0 +1,96 @@
+.steps
+  padding-top: 73px
+  &__title
+    width: 670px
+    margin: auto
+    margin-bottom: 48px
+    padding: 0
+    font-size: 30px
+    +bold
+    line-height: 45px
+  &__subtitle
+    display: block
+    font-size: 20px
+    +reg
+    margin-bottom: 68px
+    text-align: center
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+.step
+  position: relative
+  flex-basis: 20%
+  text-align: center
+  height: 186px
+  &:after
+    content: ''
+    position: absolute
+    background: url('../img/arrow.png') no-repeat
+    width: 72px
+    height: 25px
+    top: -10px
+    right: -15%
+  &:last-child
+    &:after
+      display: none
+  &__image
+    width: 100px
+    height: 100px
+    border: 3px solid $main-color
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: auto
+    margin-bottom: 30px
+  &__text
+    display: block
+    margin: auto
+    width: 170px
+    font-size: 14px
+    +reg
+    line-height: 20px
+
+@media (max-width: 1200px)
+  .steps
+    &-block
+      flex-wrap: wrap
+      align-items: center
+      justify-content: center
+  .step
+    flex-basis: 50%
+    margin-bottom: 25px
+    &:after
+      display: none
+
+@media (max-width: 768px)
+  .steps
+    &__title
+      width: 500px
+      font-size: 24px
+    &__subtitle
+      font-size: 18px
+
+@media (max-width: 576px)
+  .steps
+    padding-top: 17px
+    &__title
+      width: 280px
+      font-size: 18px
+      line-height: 22px
+      margin-bottom: 25px
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 32px
+  .step
+    height: auto
+    margin-bottom: 0px
+    &__image
+      margin-bottom: 20px
+    &__text
+      font-size: 12px
+      line-height: 16px
+      padding-bottom: 30px
+
+

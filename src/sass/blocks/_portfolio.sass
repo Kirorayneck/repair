@@ -1,0 +1,47 @@
+.portfolio
+  background-color: $hero-color
+  background: $hero-color url('../img/portfolio-bg.jpg') repeat-y center left
+  background-size: 50%
+  &__title
+    margin: auto
+    padding: 0
+    margin-bottom: 90px
+    font-size: 30px
+    +bold
+    padding-top: 15px
+    line-height: 45px
+  &__arrows
+    display: flex
+    justify-content: space-between
+    max-width: 120px
+    margin: auto
+    margin-top: 68px
+    margin-bottom: 16px
+.slider
+  &__img
+    margin: auto
+@media (max-width: 1200px)
+  .portfolio
+    &__title
+      margin-bottom: 70px
+      font-size: 24px
+@media (max-width: 768px)
+  .portfolio
+    &__title
+      font-size: 22px
+@media (max-width: 576px)
+  .portfolio
+    padding-top: 40px
+    &__title
+      font-size: 18px
+      padding-top: 0px
+      margin-bottom: 40px
+      line-height: 22px
+      max-width: 280px
+    &__arrows
+      margin-top: 45px
+  .slider
+    &__img
+      max-width: 246px
+      height: auto
+

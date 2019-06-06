@@ -1,0 +1,129 @@
+.price
+  &__title
+    width: 520px
+    margin: auto
+    margin-bottom: 48px
+    font-size: 30px
+    +bold
+    padding-top: 13px
+    line-height: 45px
+  &__subtitle
+    display: block
+    font-size: 20px
+    +reg
+    margin-bottom: 59px
+    text-align: center
+  &__card
+    margin-bottom: 30px
+    &:nth-child(n+4)
+      margin-bottom: 0
+.cards
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+.card
+  text-align: center
+  border: 1px solid $border-card
+  & img
+    display: block
+  &:hover
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+    transition: 0.4s
+    .card__image:before
+      opacity: 1
+  &__image
+    width: 370px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%)
+      opacity: 0
+      transition: 0.4s
+  &__title
+    margin: 0
+    margin-top: 38px
+    font-size: 18px
+  &__link
+    display: inline-block
+    position: relative
+    margin: 0
+    margin-top: 30px
+    text-decoration: none
+    margin-bottom: 43px
+    font-size: 16px
+    +bold
+    &:hover
+      &:after
+        height: 12px
+    &:after
+      content: ''
+      position: absolute
+      z-index: -1
+      left: 0
+      bottom: -4px
+      display: block
+      width: 100%
+      height: 3px
+      background-color: $main-color
+      transition: 0.2s
+
+@media (max-width: 1200px)
+  .price
+    &__title
+      margin-bottom: 44px
+      font-size: 26px
+      line-height: 40px
+    &__subtitle
+      font-size: 18px
+    &__card
+      margin-bottom: 25px
+
+@media (max-width: 768px)
+  .cards
+    justify-content: center
+    align-items: center
+
+@media (max-width: 576px)
+  .price
+    padding-top: 35px
+    padding-bottom: 35px
+    &__title
+      width: 280px
+      margin-bottom: 23px
+      font-size: 18px
+      line-height: 22px
+    &__subtitle
+      font-size: 14px
+      +reg
+      margin-bottom: 59px
+    &__card
+      margin-bottom: 30px
+      &:nth-child(n+4)
+        margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0
+  .card
+    &__image
+      width: 271px
+    &__title
+      margin: 0
+      margin-top: 31px
+      font-size: 14px
+    &__link
+      display: inline-block
+      position: relative
+      margin: 0
+      margin-top: 13px
+      text-decoration: none
+      margin-bottom: 32px
+
+
+ 
+
+
+

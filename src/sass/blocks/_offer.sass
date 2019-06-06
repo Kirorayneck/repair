@@ -1,0 +1,120 @@
+.offer
+  background: url('../img/offer.png') no-repeat
+  background-position: center right
+  background-size: contain
+  position: relative
+  &:before
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-color: #fff
+  &-block
+    width: 50%
+    padding-right: 90px
+    position: relative
+  &__title
+    max-width: 350px
+    margin: 0
+    margin-bottom: 20px
+    text-align: left
+  &__subtitle
+    display: block
+    width: 235px
+    margin-bottom: 29px
+  &__input
+    width: 240px
+    margin-bottom: 30px
+    outline: none
+    &:focus
+      border: 1px solid $focus
+    &:first-child
+      margin-right: 10px
+  &__button
+    width: 100%
+    min-height: 70px
+    font-size: 16px
+    +bold
+  &__more
+    display: flex
+    justify-content: space-between
+    margin-top: 25px
+    padding-bottom: 10px
+  &__text-1
+    display: block
+    width: 235px
+  &__text-2
+    display: block
+    width: 200px
+  &__description
+    font-size: 15px
+    +reg
+    line-height: 24px
+  &__phone
+    display: block
+    text-decoration: none
+    color: $text-color
+    font-size: 15px
+    +bold
+    margin-top: 5px
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &__input
+      width: 100%
+      margin-bottom: 10px
+@media (max-width: 768px)
+  .offer
+    background: #fff
+    &-block
+      width: 100%
+      padding-right: 0
+@media (max-width: 576px)
+  .offer
+    padding-bottom: 43px
+    &-block
+      padding-left: 18px
+      padding-right: 30px
+    &__title
+      max-width: 350px
+      margin-top: 46px
+      margin-bottom: 16px
+      font-size: 18px
+      +bold
+      line-height: 1.2
+    &__subtitle
+      display: block
+      width: 235px
+      margin-bottom: 29px
+      font-size: 14px
+      +reg
+    &__input
+      width: 100%
+      margin-bottom: 8px
+      &:first-child
+        margin-right: 0px
+    &__more
+      display: flex
+      flex-direction: column
+      margin-top: 20px
+      padding-left: 5px
+    &__text-1
+      display: block
+      width: 235px
+    &__text-2
+      display: block
+      margin-top: 5px
+      width: 200px
+    &__description
+      font-size: 15px
+      +reg
+      line-height: 24px
+    &__phone
+      display: block
+      text-decoration: none
+      color: $text-color
+      font-size: 15px
+      +bold
+      margin-top: 5px
